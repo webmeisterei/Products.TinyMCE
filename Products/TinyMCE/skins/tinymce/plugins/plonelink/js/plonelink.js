@@ -46,6 +46,11 @@ function init() {
     if (tinyMCEPopup.editor.settings.rooted) {
         document.getElementById('home').style.display = 'none';
     }
+    
+    if (tinyMCEPopup.editor.settings.portal_url == tinyMCEPopup.editor.settings.navigation_root_url) {
+    	/* just show navigation to the portal in case we're stuck in a subportal */
+    	document.getElementById('portalhome').style.display = 'none';
+    } 
 
     if (action == "update") {
         var href = inst.dom.getAttrib(elm, 'href');

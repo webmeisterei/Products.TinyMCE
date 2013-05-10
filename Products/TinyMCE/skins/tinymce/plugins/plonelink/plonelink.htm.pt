@@ -21,6 +21,13 @@
         <fieldset class="column columnlibraries">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
                 <ul class="configlets">
+                    
+                <li id="portalhome">
+                    <a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablefolderlisting');">
+                        <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Portal Home</span>
+                    </a>
+                </li>
+            
                     <li id="home">
               <a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablefolderlisting');">
                   <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Home</span>

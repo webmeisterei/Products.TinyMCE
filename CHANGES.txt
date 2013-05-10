@@ -8,6 +8,11 @@ HISTORY
 - Fixed charset in source editor for non en languages.
   [kroman0]
 
+- Add a new library for accessing the plone-site-root in link and image 
+  dialogs so users are not locked in folders providing INavigationRoot.
+  
+  Fixes https://dev.plone.org/ticket/10068
+  
 
 1.2.16 (2013-03-15)
 -------------------
