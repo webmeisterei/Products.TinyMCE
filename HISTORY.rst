@@ -5,6 +5,7 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
+
 - deactivate diazo for ``@@tinymce-upload`` view to make
   sure ``uploadOk`` script is called to update the
   content browser panel.
@@ -12,6 +13,10 @@ HISTORY
 
 - UI and UX improvements: Do not cover upload button.
   Clickable icons. (fixes #106) [fRiSi]
+
+- Fixed current image scale in image popups
+  [huubbouma]
+
 
 
 1.3.10 (2015-06-26)
